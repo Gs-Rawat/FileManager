@@ -19,15 +19,26 @@ public class Main {
             case "cp":
                 try {
                     Copy.copy(args[1], args[2]);
-                }
-                catch(Exception ex) {
+                }catch(Exception ex) {
                     ex.printStackTrace();
                 }
                 break;
             
-            // case "del":
-            //     Delete.del();
-            //     break;
+            case "rm":
+                try{
+                    Remove.removeFile(args[1]);
+                }catch(Exception ex) {
+                    ex.printStackTrace();
+                }
+                break;
+
+            case "rmdir":
+                try{
+                    Remove.removeFile(args[1]);
+                }catch(Exception ex) {
+                    ex.printStackTrace();
+                }
+                break;
 
             // case "lsdir":
             //     Directory.listdir();
